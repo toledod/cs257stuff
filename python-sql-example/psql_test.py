@@ -9,7 +9,7 @@ def test_connection():
     
     conn = psycopg2.connect(
         host="localhost",
-        port=9999,   
+        port=5432,   
         database="mlepinski",
         user="mlepinski",
         password="MyDatabasePassword")
