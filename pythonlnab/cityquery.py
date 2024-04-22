@@ -13,7 +13,7 @@ def findNorthfield():
     
    cur = conn.cursor()
 
-   sql = "SELECT * FROM uscitiestop1k WHERE city = 'Northfield';"
+   sql = "SELECT * FROM uscitiestop1k WHERE city = 'Chicago';"
     
    cur.execute( sql )
 
@@ -38,4 +38,28 @@ def findNorthfield():
     
    return None
 
+
+
+def bigPop():
+   conn = psycopg2.connect(
+        host="localhost",
+        port=5432,   
+        database="toledod",
+        user="toledod",
+        password="mask777glass")
+    
+   cur = conn.cursor()
+
+   sql = "SELECT * FROM uscitiestop1k WHERE city = 'Northfield';"
+
+
+
+
+
+
+
 findNorthfield()
+
+
+
+
