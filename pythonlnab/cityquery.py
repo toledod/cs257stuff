@@ -25,8 +25,8 @@ def findNorthfield():
       print("City does not exist")
       return None
    else:
-       print( row[3] )
-       print( row[4] )
+       print( row_list[3] )
+       print( row_list[4] )
     
    # Note: We could access individual items in the row
    # That is, row[0] would be the name column in the previous example
