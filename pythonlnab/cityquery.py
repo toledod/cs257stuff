@@ -7,7 +7,7 @@ def findNorthfield():
    conn = psycopg2.connect(
         host="localhost",
         port=5432,   
-        database="toledod",
+        database="uscitiestop1k",
         user="toledod",
         password="mask777glass")
     
