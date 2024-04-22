@@ -2,35 +2,35 @@ import psycopg2
 
 def findNorthfield():
 
-    # You will need to change the Port and the Password to use this code
+   # You will need to change the Port and the Password to use this code
     
    conn = psycopg2.connect(
         host="localhost",
         port=5432,   
-        database="uscitiestop1k",
+        database="toledod",
         user="toledod",
         password="mask777glass")
     
-    cur = conn.cursor()
+   cur = conn.cursor()
 
-    sql = "SELECT Northfield, abb FROM city"
+   sql = "SELECT Northfield, abb FROM city"
     
-    cur.execute( sql )
+   cur.execute( sql )
 
-    # fetchall() returns a list containing all rows that matches your query
-    row_list = cur.fetchall()
+   # fetchall() returns a list containing all rows that matches your query
+   row_list = cur.fetchall()
 
-    # It is often useful to loop through all rows in a query result
-    for row in row_list:
-        print( row[1] )
+   # It is often useful to loop through all rows in a query result
+   for row in row_list:
+       print( row[1] )
     
-    # Note: We could access individual items in the row
-    # That is, row[0] would be the name column in the previous example
-    #   ... and row[1] would be the abb column
+   # Note: We could access individual items in the row
+   # That is, row[0] would be the name column in the previous example
+   #   ... and row[1] would be the abb column
 
-    # Here I am leaving out the conn.commit() because we aren't changing
-    #    either the database or the data in the database
+   # Here I am leaving out the conn.commit() because we aren't changing
+   #    either the database or the data in the database
     
-    return None
+   return None
 
 findNorthfield()
