@@ -49,7 +49,7 @@ def bigPop():
     
    cur = conn.cursor()
 
-   sql = "SELECT * FROM uscitiestop1k ORDER BY Population DESC;"
+   sql = "SELECT * FROM uscitiestop1k ORDER BY pop DESC;"
    cur.execute( sql )
    row_list = cur.fetchone()
    print( row_list[0] )
