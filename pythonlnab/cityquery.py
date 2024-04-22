@@ -1,19 +1,19 @@
 import psycopg2
 
-def test_query_all():
+def findNorthfield():
 
     # You will need to change the Port and the Password to use this code
     
-    conn = psycopg2.connect(
+   conn = psycopg2.connect(
         host="localhost",
-        port=9999,
-        database="mlepinski",
-        user="mlepinski",
-        password="MyDatabasePassword")
-
+        port=5432,   
+        database="uscitiestop1k",
+        user="toledod",
+        password="mask777glass")
+    
     cur = conn.cursor()
 
-    sql = "SELECT name, abb FROM states"
+    sql = "SELECT Northfield, abb FROM city"
     
     cur.execute( sql )
 
@@ -32,3 +32,5 @@ def test_query_all():
     #    either the database or the data in the database
     
     return None
+
+findNorthfield()
