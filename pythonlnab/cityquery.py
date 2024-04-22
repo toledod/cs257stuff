@@ -25,8 +25,8 @@ def findNorthfield():
       print("City does not exist")
       return None
    else:
-       print( row_list[3] )
-       print( row_list[4] )
+       print("Lat:", row_list[3] )
+       print("Long:", row_list[4] )
     
    # Note: We could access individual items in the row
    # That is, row[0] would be the name column in the previous example
@@ -52,7 +52,7 @@ def bigPop():
    sql = "SELECT * FROM uscitiestop1k ORDER BY pop DESC;"
    cur.execute( sql )
    row_list = cur.fetchone()
-   print( row_list[0] )
+   print("Biggest Population:", row_list[0] )
    
 
 
