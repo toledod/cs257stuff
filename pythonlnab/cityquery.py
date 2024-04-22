@@ -24,8 +24,7 @@ def findNorthfield():
    if row_list == None:
       print("City does not exist")
       return None
-   
-   for row in row_list:
+   else:
        print( row[3] )
        print( row[4] )
     
