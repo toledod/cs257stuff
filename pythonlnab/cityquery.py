@@ -13,12 +13,12 @@ def findNorthfield():
     
    cur = conn.cursor()
 
-   sql = "SELECT * FROM uscitiestop1k WHERE city = 'Chicago';"
+   sql = "SELECT * FROM uscitiestop1k WHERE city = 'Northfield';"
     
    cur.execute( sql )
 
    # fetchall() returns a list containing all rows that matches your query
-   row_list = cur.fetchall()
+   row_list = cur.fetchone()
 
    # It is often useful to loop through all rows in a query result
    if row_list == None:
