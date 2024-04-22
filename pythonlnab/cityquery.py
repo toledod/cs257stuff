@@ -53,14 +53,27 @@ def bigPop():
    cur.execute( sql )
    row_list = cur.fetchone()
    print("Biggest Population:", row_list[0] )
+
+def smallMN():
+   conn = psycopg2.connect(
+        host="localhost",
+        port=5432,   
+        database="toledod",
+        user="toledod",
+        password="mask777glass")
+    
+   cur = conn.cursor()
+
+   sql = "SELECT * FROM uscitiestop1k WHERE state = 'Minnesota' ORDER BY pop ASC;"
+   cur.execute( sql )
+   row_list = cur.fetchone()
+   print("Smallest City in MN:", row_list[1] )
    
-
-
-
 
 
 findNorthfield()
 bigPop()
+smallMN()
 
 
 
