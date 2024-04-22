@@ -13,7 +13,7 @@ def findNorthfield():
     
     cur = conn.cursor()
 
-    sql = "SELECT Northfield, abb FROM city"
+    sql = "SELECT Northfield, abb FROM city;"
     
     cur.execute( sql )
 
