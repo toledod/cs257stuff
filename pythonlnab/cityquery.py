@@ -67,7 +67,7 @@ def smallMN():
    sql = "SELECT * FROM uscitiestop1k WHERE state = 'Minnesota' ORDER BY pop ASC;"
    cur.execute( sql )
    row_list = cur.fetchone()
-   print("Smallest City in MN:", row_list[1] )
+   print("Smallest City in MN:", row_list[0] )
    
 
 
