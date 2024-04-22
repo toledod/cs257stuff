@@ -22,7 +22,7 @@ def findNorthfield():
 
    # It is often useful to loop through all rows in a query result
    if row_list == None:
-      print("City does not exisit")
+      print("City does not exist")
       return None
    
    for row in row_list:
