@@ -21,9 +21,12 @@ def findNorthfield():
    row_list = cur.fetchall()
 
    # It is often useful to loop through all rows in a query result
+   if row_list == None:
+      print("City does not exisit")
    
    for row in row_list:
-       print( row[2] )
+       print( row[3] )
+       print( row[4] )
     
    # Note: We could access individual items in the row
    # That is, row[0] would be the name column in the previous example
