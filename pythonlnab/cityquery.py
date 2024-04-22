@@ -49,15 +49,18 @@ def bigPop():
     
    cur = conn.cursor()
 
-   sql = "SELECT * FROM uscitiestop1k WHERE city = 'Northfield';"
-
-
+   sql = "SELECT * FROM uscitiestop1k ORDER BY Population DESC;"
+   cur.execute( sql )
+   row_list = cur.fetchone()
+   print( row_list[0] )
+   
 
 
 
 
 
 findNorthfield()
+bigPop()
 
 
 
