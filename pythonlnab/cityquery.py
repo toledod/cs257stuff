@@ -95,12 +95,12 @@ def dirCit():
    sql = "SELECT * FROM uscitiestop1k ORDER BY ion ASC;"
    cur.execute( sql )
    row_list = cur.fetchone()
-   print("Most East", row_list[0] )
+   print("Most West", row_list[0] )
    
    sql = "SELECT * FROM uscitiestop1k ORDER BY ion DESC;"
    cur.execute( sql )
    row_list = cur.fetchone()
-   print("Most West", row_list[0] )
+   print("Most East", row_list[0] )
    
 
 findNorthfield()
