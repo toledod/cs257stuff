@@ -137,7 +137,7 @@ def userIn():
       
       total = 0
       for x in tabResult:
-         total = total + int(tabResult[2]);
+         total = total + int(x[2]);
       
       print(total)
 
