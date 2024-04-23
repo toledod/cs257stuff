@@ -113,13 +113,13 @@ def userIn():
    cur = conn.cursor()
    userInput = input("What state you want?")
    if len(userInput) == 2:
-      sql = "SELECT * FROM usstatepop WHERE abb = %s;"
+      sql = "SELECT * FROM usstatepop WHERE code = %s;"
       state_abb1 = userInput
       cur.execute( sql, [state_abb1]  )
       row = cur.fetchone()
       stateName = row[1]
       
-      sql2 = "SELECT * FROM uscitiestop1k WHERE abb = %s;"
+      sql2 = "SELECT * FROM uscitiestop1k WHERE state = %s;"
 
       cur.execute( sql2, [stateName] )
       tabResult = cur.fetchall()
@@ -130,7 +130,7 @@ def userIn():
       
       print(total)
    else:
-      sql = "SELECT * FROM uscitiestop1k WHERE abb = %s;"
+      sql = "SELECT * FROM uscitiestop1k WHERE state = %s;"
       stateName = userInput
       cur.execute( sql, [stateName]  )
       tabResult = cur.fetchall()
