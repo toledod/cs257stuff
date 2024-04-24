@@ -22,5 +22,5 @@ if __name__ == '__main__':
 
 @app.route('/add/<num1>/<num2>')
 def my_display(num1, num2):
-    addResult = num1 + num2
+    addResult = int(num1) + int(num2)
     return addResult
