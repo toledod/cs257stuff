@@ -19,7 +19,8 @@ def my_color(word1):
 @app.route('/add/<num1>/<num2>')
 def my_add(num1, num2):
     addResult = int(num1) + int(num2)
-    string = "the result is " + addResult;
+    result = str(addResult)
+    string = "the result is " + result;
     return string
 
 if __name__ == '__main__':
