@@ -16,12 +16,13 @@ def my_display(word1, word2):
 def my_color(word1):
     return '<h1 style="color:Orange">' + word1 + '</h1>'
 
-if __name__ == '__main__':
-    my_port = 5129
-    app.run(host='0.0.0.0', port = my_port) 
-
-@app.route('/add/num1/num2')
+@app.route('/add/<num1>/<num2>')
 def my_add(num1, num2):
     addResult = int(num1) + int(num2)
     string = "the result is " + addResult;
     return string
+
+if __name__ == '__main__':
+    my_port = 5129
+    app.run(host='0.0.0.0', port = my_port) 
+
