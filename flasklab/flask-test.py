@@ -19,3 +19,8 @@ def my_color(word1):
 if __name__ == '__main__':
     my_port = 5129
     app.run(host='0.0.0.0', port = my_port) 
+
+@app.route('/add/<num1>/<num2>')
+def my_display(num1, num2):
+    addResult = num1 + num2
+    return addResult
