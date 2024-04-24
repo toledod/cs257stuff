@@ -39,8 +39,7 @@ def popGet(abb):
     
     cur.execute( sql, [abb] )
     row = cur.fetchone()
-    print("The population of ",row[1], "is : ", row[2] )
-
+    string = "The population of " + row[1] + "is : " + row[2];
     
     return string
 
