@@ -22,6 +22,27 @@ def my_add(num1, num2):
     result = str(addResult)
     string = "the result is " + result;
     return string
+    
+@app.route('/pop/<abb>')
+def popGet(abb):
+    conn = psycopg2.connect(
+        host="localhost",
+        port=5432,   
+        database="toledod",
+        user="toledod",
+        password="mask777glass")
+    
+    cur = conn.cursor()
+
+    sql = "SELECT * FROM usstatepop WHERE code = %s;"
+
+    
+    cur.execute( sql, [abb] )
+    row = cur.fetchone()
+    print("The population of ",row[1], "is : ", row[2] )
+
+    
+    return string
 
 if __name__ == '__main__':
     my_port = 5129
