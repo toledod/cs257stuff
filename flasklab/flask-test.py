@@ -42,10 +42,9 @@ def popGet(abb):
     row = cur.fetchone()
     if row == None:
         string = "Could not find that State"
-         return string
+        return string
     else:
         string = "The population of " + str(row[1]) + "is : " + str(row[2]);
-    
         return string
 
 if __name__ == '__main__':
