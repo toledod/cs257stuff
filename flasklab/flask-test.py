@@ -40,9 +40,13 @@ def popGet(abb):
     
     cur.execute( sql, [abb] )
     row = cur.fetchone()
-    string = "The population of " + str(row[1]) + "is : " + str(row[2]);
+    if row == None:
+        string = "Could not find that State"
+         return string
+    else:
+        string = "The population of " + str(row[1]) + "is : " + str(row[2]);
     
-    return string
+        return string
 
 if __name__ == '__main__':
     my_port = 5129
