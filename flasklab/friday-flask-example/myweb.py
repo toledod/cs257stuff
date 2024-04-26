@@ -15,4 +15,8 @@ def getName():
               "Melanie", "Mellisa", "Bianca", "Steven", "Angel's bitch ass", "Allen", "Sharon", "Ben", "Kevin", "Alex"]
   nameChosen = nameList[randomNum]
   return render_template("gotName.html", name = nameChosen)
+
+if __name__ == '__main__':
+    my_port = 5129
+    app.run(host='0.0.0.0', port = my_port) 
   
