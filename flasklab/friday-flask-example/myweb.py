@@ -5,14 +5,6 @@ import random
 app = Flask(__name__)
 
 @app.route('/')
-def getName():
-  conn = psycopg2.connect(
-    host="localhost",
-    port=5432,   
-    database="toledod",
-    user="toledod",
-    password="mask777glass")
+def welcomeScreen():
+  return render_template("myIndex.html")
   
-  cur = conn.cursor()
-  
-  sql = "SELECT * FROM usstatepop WHERE code = %s;"
