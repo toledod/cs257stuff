@@ -8,7 +8,7 @@ app = Flask(__name__)
 def welcomeScreen():
   return render_template("myIndex.html")
 
-@app.route('/name)
+@app.route('/name')
 def getName();
   randomNum = random.randint(0, 19)
   nameList = ["Gelad", "Howard", "Jose", "Veronica", "Frank", "Deven", "Pooh Shiesty", "Willian", "Craig", "Josie",
