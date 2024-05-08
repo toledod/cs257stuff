@@ -13,14 +13,20 @@
 </p>
 
 <p class="center-para">
-
-<img src="/static/pictures/fortune-cookie.svg" 
-  style="object-fit:contain;
-            width:200px;
-            height:200px;"
-  onclick = "giveFortune()">
+<a href="/fortune">
+  <img src="/static/pictures/fortune-cookie.svg" 
+    style="object-fit:contain;
+              width:200px;
+              height:200px;"
+    onclick = "giveFortune()">
 <div class = "fortuneBox">
 {{fortune}}
 </div>
+
+<a href="/">
+  <button>
+    get another?
+  </button>
+</a>
   
 </p>
