@@ -15,9 +15,11 @@ def welcome():
 def cookieClick():
   possibleF = ["you getting mad bitches", "you gonna die tmr", "good luck...", "you thought you were gonna get something good?",
                "she wants you fr", "whatever you were thinking about doing, dont", "don't do it lil bro", "tell zoey she a bitch for good luck"]
-  num = random.randint(0, 7)
+  num = random.randint(0, 3)
+  possibleF2 = ["tell zoey she a bitch for good luck", "if you see zoey today, you failing your next test", "call zoey, if she answers: good luck for 7 days",
+                "if zoey goes to HCI tmr, everyone gets a cookie"]
   message = "Welcome to Get A Fortune Cookie!"
-  fortune1 = possibleF[num]
+  fortune1 = possibleF2[num]
   return render_template("myhtml.html", someText = message, fortune = fortune1)
 
 if __name__ == '__main__':
