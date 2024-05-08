@@ -7,3 +7,7 @@ app = Flask(__name__)
 def welcome():
   message = "Welcome to Get A Fortune Cookie!"
   return render_template("myhtml.html", someText = message)
+
+if __name__ == '__main__':
+    my_port = 5000
+    app.run(host='0.0.0.0', port = 5129) 
