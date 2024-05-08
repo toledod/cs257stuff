@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def welcome():
   message = "Welcome to Get A Fortune Cookie!"
-  fortunePlcae = "click the cookie!"
+  fortunePlace = "click the cookie!"
   return render_template("myhtml.html", someText = message, fortune = fortunePlace)
   
 @app.route('/fortune')
