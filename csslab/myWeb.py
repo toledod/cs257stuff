@@ -18,7 +18,7 @@ def cookieClick():
               "sometimes wisdom comes in shutting up", "think of 3 things, you getting none of them", "buy a tequila bottle", "buy 2 tequila bottles",
               "google cute kittens rn", "shouldn't you be studying", "tell a freind your favorite song", "idk what to tell you lil bro", "try harder",
               "change your fit it's ass", "what the dog doin?", 
-               "good things happen to bad people", "slip on a banana", "you gonna get hit by a car in like 8 minutes"
+               "good things happen to bad people", "slip on a banana", "you gonna get hit by a car in like 8 minutes", "bad things happen to good people"
               
               
               
