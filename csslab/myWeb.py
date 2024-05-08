@@ -17,8 +17,13 @@ def cookieClick():
                "she wants you fr", "whatever you were thinking about doing, dont", "don't do it lil bro", "tell zoey she a bitch for good luck",
               "sometimes wisdom comes in shutting up", "think of 3 things, you getting none of them", "buy a tequila bottle", "buy 2 tequila bottles",
               "google cute kittens rn", "shouldn't you be studying", "tell a freind your favorite song", "idk what to tell you lil bro", "try harder",
-              "change your fit it's ass", "what the dog doin?"]
-  num = random.randint(0, 18)
+              "change your fit it's ass", "what the dog doin?", 
+               "good things happen to bad people", "slip on a banana", "you gonna get hit by a car in like 8 minutes"
+              
+              
+              
+              ]
+  num = random.randint(0, 21)
  
   message = "Welcome to Get A Fortune Cookie!"
   fortune1 = possibleF[num]
