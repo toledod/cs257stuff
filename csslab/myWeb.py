@@ -23,7 +23,7 @@ def cookieClick():
               
               
               ]
-  num = random.randint(0, 21)
+  num = random.randint(0, len(possibleF))
  
   message = "Welcome to Get A Fortune Cookie!"
   fortune1 = possibleF[num]
