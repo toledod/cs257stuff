@@ -19,7 +19,7 @@ def cookieClick():
   possibleF = ["tell zoey she a bitch for good luck", "if you see zoey today, you failing your next test", "call zoey, if she answers: good luck for 7 days",
                 "if zoey goes to HCI tmr, everyone gets a cookie"]
   message = "Welcome to Get A Fortune Cookie!"
-  fortune1 = possibleF2[num]
+  fortune1 = possibleF[num]
   return render_template("myhtml.html", someText = message, fortune = fortune1)
 
 if __name__ == '__main__':
