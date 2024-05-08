@@ -1,5 +1,7 @@
 from flask import Flask
 from flask import render_template
+import random
+
 
 app = Flask(__name__)
 
@@ -13,7 +15,7 @@ def welcome():
 def cookieClick():
   possibleF = ["you getting mad bitches", "you gonna die tmr", "good luck...", "you thought you were gonna get something good?",
                "she wants you fr", "whatever you were thinking about doing, dont", "don't do it lil bro", "tell zoey she a bitch for good luck"]
-  num = Math.floor(Math.random() * 8)
+  num = random.randint(0, 7)
   fortune1 = possibleF[num]
   return render_template("myhtml.html", someText = message, fortune = fortune1)
 
