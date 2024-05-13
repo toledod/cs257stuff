@@ -41,7 +41,7 @@ def cookieClick():
     "At the touch of love, everyone becomes a poet.",
     "you will slip on a bannana",
 ]
-  num = random.randint(0, len(possibleF))
+  num = random.randint(0, len(possibleF) - 1)
  
   message = "Welcome to Get A Fortune Cookie!"
   fortune1 = possibleF[num]
