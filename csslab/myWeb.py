@@ -13,16 +13,34 @@ def welcome():
   
 @app.route('/fortune')
 def cookieClick():
-  possibleF = ["you getting mad bitches", "you gonna die tmr", "good luck...", "you thought you were gonna get something good?",
-               "she wants you fr", "whatever you were thinking about doing, dont", "don't do it lil bro", "tell zoey she a bitch for good luck",
-              "sometimes wisdom comes in shutting up", "think of 3 things, you getting none of them", "buy a tequila bottle", "buy 2 tequila bottles",
-              "google cute kittens rn", "shouldn't you be studying", "tell a freind your favorite song", "idk what to tell you lil bro", "try harder",
-              "change your fit it's ass", "what the dog doin?", 
-               "good things happen to bad people", "slip on a banana", "you gonna get hit by a car in like 8 minutes", "bad things happen to good people"
-              
-              
-              
-              ]
+  possibleF = [
+    "A dream you dream alone is only a dream. A dream you dream together is reality.",
+    "A friend asks only for your time, not your money.",
+    "A golden egg of opportunity falls into your lap this month.",
+    "A good friendship is often more important than a passionate romance.",
+    "A hunch is creativity trying to tell you something.",
+    "A lifetime of happiness lies ahead of you.",
+    "A light heart carries you through all the hard times.",
+    "A new perspective will come with the new year.",
+    "A person is never to (sic) old to learn.",
+    "A pleasant surprise is waiting for you.",
+    "A smile is your personal welcome mat.",
+    "A smooth long journey! Great expectations.",
+    "A soft voice may be awfully persuasive.",
+    "A truly rich life contains love and art in abundance.",
+    "Accept something that you cannot change, and you will feel better.",
+    "Adventure can be real happiness.",
+    "Advice, when most needed, is least heeded.",
+    "All will go well with your new project.",
+    "All your hard work will soon pay off.",
+    "Allow compassion to guide your decisions.",
+    "An acquaintance of the past will affect you in the near future.",
+    "An exciting opportunity lies ahead.",
+    "An inch of time is an inch of gold.",
+    "Any decision you have to make tomorrow is a good decision.",
+    "At the touch of love, everyone becomes a poet.",
+    "you will slip on a bannana",
+]
   num = random.randint(0, len(possibleF))
  
   message = "Welcome to Get A Fortune Cookie!"
